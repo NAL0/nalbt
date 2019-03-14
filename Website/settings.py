@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = access.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['nal0.pythonanywhere.com/', '127.0.0.1']
+ALLOWED_HOSTS = ['nal0.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -122,4 +122,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#STATIC_ROOT = 'home/NAL0/static'
+STATIC_ROOT = '/home/NAL0/nalbt/static/'
