@@ -1,0 +1,85 @@
+<!DOCKTYPE html>
+<html>
+
+{% extends "Home/header.html" %}
+{% block content %}
+      <header class="masthead mb-auto">
+    {% load staticfiles %}
+        <div class="inner">
+          <!--<h3 class="masthead-brand">Cover</h3> -->
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="/">Brain Trust</a>
+            <a class="nav-link" href="/sdgs/">SDG's</a>
+            <a class="nav-link" href="/blog/">Blog</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+
+<head>
+<title>Calendar</title>
+<style>
+body{
+
+}
+.container{
+	max-width:800px;
+	margin:auto;
+	font-family:sans-serif;
+}
+.month{
+text-align:center;
+background:purple;
+font-size:2.5em;
+letter-spacing:1px;
+color:white;
+padding:25px;
+border:1px solid skyblue;
+}
+table, th, td{
+	width:100%;
+	table-layout:fixed;
+	text-align:center;
+	font-size:17px;
+	border-collapse:collapse;
+	border:1px solid skyblue;
+}
+tr, th, td{
+	padding:15px;
+}
+th{
+	background:red;
+
+}
+td{
+
+}
+td:hover{
+background:orange;
+}
+</style>
+</head>
+<div class = "container">
+	<div class ="month">
+	<strong> March </strong>
+	</div>
+		<table>
+			<tr>
+				<th>Sun</th>
+				<th>Mon</th>
+				<th>Tue</th>
+				<th>Wed</th>
+				<th>Thu</th>
+				<th>Fri</th>
+				<th>Sat</th>
+			</tr>
+			{% include "Calendar/includes/Calendar2.html" %}
+			
+		</table>
+</div>
+<body>
+
+</body>
+{% endblock %}
+</html>

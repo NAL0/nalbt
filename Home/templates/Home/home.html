@@ -6,7 +6,7 @@
           <!--<h3 class="masthead-brand">Cover</h3> -->
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="/">Brain Trust</a>
-            <a class="nav-link" href="/constitution/">Constitution</a>
+            <a class="nav-link" href="/sdgs/">SDG's</a>
             <a class="nav-link" href="/blog/">Blog</a>
           </nav>
         </div>
@@ -14,19 +14,28 @@
 
       <main role="main" class="inner cover">
 
+
+
 	<h1 class="cover-heading">The Brain Trust</h1> 
 	<p>The Brain Trust is an organ of New Age liberty, an informal non-profit NGO created to achieve the goal of afrikan unity through Ubuntu, technology and innovation</p>
+
+<center>
+        <img src="{% static 'Home/image/ioi.png' %}" width="140" height="140" background="#777" color="#777" class="rounded-circle">
+</center>
+
+{% include "Home/includes/QOTD.html" %}
+
 	<!---<p class="lead">
 		  <a href="/mission/" class="btn btn-lg btn-secondary">Learn more</a>
 	</p>--->
 
-<center>
+<!---<center>
       <div class="col-lg-4">
         <img src="{% static 'Home/image/ioi.png' %}" width="140" height="140" background="#777" color="#777" class="rounded-circle">
         <h2>Constitutive Act</h2>
         <p>New Age Liberty was born 4 April 2016. The Act outlines the structures of the organisation and procedures to be followed in day to day operations</p>
         <p><a class="btn btn-secondary" href="/constitution/" role="button">View details &raquo;</a></p>
       </div>
-</center>
+</center> --->
 
 {% endblock %}
