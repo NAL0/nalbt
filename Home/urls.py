@@ -11,4 +11,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('sdgs/', views.index2, name='index2'),
     path('speech/', views.index3, name='index3'),
+    path('speech2/', views.index3, name='index4'),
     ]
