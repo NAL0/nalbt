@@ -13,3 +13,6 @@ def index3(request):
 
 def index4(request):
     return render(request, 'Home/2.html')
+
+def index5(request):
+    return render(request, 'Home/SADC_national_anthem.html')
