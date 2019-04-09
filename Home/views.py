@@ -9,7 +9,7 @@ def index2(request):
 	return render(request, "Home/SDG's.html")
 
 def index3(request):
-    return render(request, 'Home/1.html')
+    return render(request, 'Home/constitutive_act.html')
 
 def index4(request):
     return render(request, 'Home/2.html')
