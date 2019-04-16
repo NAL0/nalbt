@@ -1,2 +1,4 @@
+settings.py
 access.py
 *.pyc
+*pyc
