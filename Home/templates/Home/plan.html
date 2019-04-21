@@ -1,0 +1,20 @@
+{% extends "Home/header.html" %}
+{% block content %}
+      <header class="masthead mb-auto">
+    {% load staticfiles %}
+        <div class="inner">
+          <!--<h3 class="masthead-brand">Cover</h3> -->
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="/">Brain Trust</a>
+            <a class="nav-link" href="/sdgs/">SDG's</a>
+            <a class="nav-link" href="/blog/">Blog</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+
+<div class="w3-container w3-red">
+<img src="{% static 'Home/image/plan.gif' %}" style="width:100%">
+</div>
+{% endblock %}

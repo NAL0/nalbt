@@ -16,3 +16,6 @@ def index4(request):
 
 def index5(request):
     return render(request, 'Home/SADC_national_anthem.html')
+
+def index6(request):
+    return render(request, 'Home/plan.html')
