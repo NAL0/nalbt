@@ -2,14 +2,7 @@
 {% block content %}
       <header class="masthead mb-auto">
     {% load staticfiles %}
-        <div class="inner">
-          <!--<h3 class="masthead-brand">Cover</h3> -->
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link " href="/">Brain Trust</a>
-            <a class="nav-link active" href="/sdgs/">SDG's</a>
-            <a class="nav-link" href="/blog/">Blog</a>
-          </nav>
-        </div>
+    {% include "Home/includes/active_sgds.html" %}
       </header>
 
       <main role="main" class="inner cover">
@@ -137,6 +130,6 @@ Sustainable Development.</p>
 
     </div>
 
-{% include "Home/includes/p2.html" %}
+{% include "Home/proverb/p8.html" %}
 
 {% endblock %}

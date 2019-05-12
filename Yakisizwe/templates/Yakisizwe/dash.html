@@ -1,0 +1,18 @@
+{% extends "Home/header.html" %}
+{% block content %}
+      <header class="masthead mb-auto">
+    {% load staticfiles %}
+    {% include "Home/includes/active_yakhisizwe.html" %}
+      </header>
+
+      <main role="main" class="inner cover">
+
+<center>
+        <img src="{% static 'Home/image/COASA.svg' %}" width="140" height="140" background="#777" color="#777" class="rounded-circle">
+</center>
+
+    {% include "Yakhisizwe/includes/about_us.html" %}
+
+{% include "Home/proverb/p74.html" %}
+
+{% endblock %}

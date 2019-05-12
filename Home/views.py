@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
+
 
 # Create your views here.
 
@@ -8,6 +10,7 @@ def index(request):
 def index2(request):
 	return render(request, "Home/SDG's.html")
 
+@login_required
 def index3(request):
     return render(request, 'Home/constitutive_act.html')
 
@@ -19,3 +22,6 @@ def index5(request):
 
 def index6(request):
     return render(request, 'Home/plan.html')
+
+##def index8(request):
+##    return render(request, 'Home/sign_in.html')

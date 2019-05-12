@@ -1,6 +1,6 @@
 #from django.conf.urls import url
 from . import views
-from django.urls import path
+from django.urls import path, include
 
 #urlpatterns = [
 #    url(r'^$', views.index, name='index'),
@@ -14,4 +14,5 @@ urlpatterns = [
     path('speech/', views.index4, name='index4'),
     path('anthem/', views.index5, name='index5'),
     path('plan/', views.index6, name='index6'),
+    path('init/', include('Yakisizwe.urls'))
     ]

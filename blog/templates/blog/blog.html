@@ -1,14 +1,7 @@
 {% extends "Home/header.html" %}
 {% block content %}
       <header class="masthead mb-auto">
-        <div class="inner">
-          <!--<h3 class="masthead-brand">Cover</h3> -->
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link " href="/">Brain Trust</a>
-            <a class="nav-link " href="/sdgs/">SDG's</a>
-            <a class="nav-link active" href="/blog/">Blog</a>
-          </nav>
-        </div>
+    {% include "Home/includes/active_blog.html" %}
       </header>
 
       <main role="main" class="inner cover">
@@ -17,5 +10,5 @@
 		<h5>{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.id}}">  {{ post.title }}</a></h5>
 	{% endfor %}
 	<br>
-	{% include "Home/includes/p10.html" %}
+	{% include "Home/proverb/p40.html" %}
 {% endblock %}

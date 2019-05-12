@@ -2,14 +2,9 @@
 {% block content %}
       <header class="masthead mb-auto">
     {% load staticfiles %}
-        <div class="inner">
-          <!--<h3 class="masthead-brand">Cover</h3> -->
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="/">Brain Trust</a>
-            <a class="nav-link" href="/sdgs/">SDG's</a>
-            <a class="nav-link" href="/blog/">Blog</a>
-          </nav>
-        </div>
+
+    {% include "Home/includes/active_bt.html" %}
+
       </header>
 
       <main role="main" class="inner cover">
@@ -24,18 +19,10 @@
 </center>
 
 {% include "Home/includes/QOTD.html" %}
+<br></br>
+<p>Through our partnerships we are building <strong>The Afrika We Want</strong>. To realise our goal we need your help.</p>
+<p><a class="btn btn-primary btn-lg btn-block" href="init" role="button">Learn more.</a></p>
 
-	<!---<p class="lead">
-		  <a href="/mission/" class="btn btn-lg btn-secondary">Learn more</a>
-	</p>--->
 
-<!---<center>
-      <div class="col-lg-4">
-        <img src="{% static 'Home/image/ioi.png' %}" width="140" height="140" background="#777" color="#777" class="rounded-circle">
-        <h2>Constitutive Act</h2>
-        <p>New Age Liberty was born 4 April 2016. The Act outlines the structures of the organisation and procedures to be followed in day to day operations</p>
-        <p><a class="btn btn-secondary" href="/constitution/" role="button">View details &raquo;</a></p>
-      </div>
-</center> --->
 
 {% endblock %}

@@ -1,0 +1,30 @@
+{% extends "Home/header.html" %}
+{% block content %}
+      <header class="masthead mb-auto">
+    {% load staticfiles %}
+    {% include "Home/includes/active_bt.html" %}
+<br></br>
+<br></br>
+  <body class="text-center">
+
+    <form class="form-signin" method="post">
+      {% csrf_token %}
+      <img class="mb-4" src="{% static 'Home/image/af.png' %}" alt="{% static 'Home/image/ioi.png' %}" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Welcome, please sign in</h1>
+      {{ form }}
+      <!--<input type="submit"/>-->
+      <br></br>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" value="login">Sign in</button>
+
+    </form>
+  </body>
+<br></br>
+<p>Don't have an account? <a href="../register">sign-up here</a></p>
+{% include "Home/proverb/p69.html" %}
+<br></br>
+{% endblock %}

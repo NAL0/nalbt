@@ -1,0 +1,26 @@
+{% extends "Home/header.html" %}
+{% block content %}
+      <header class="masthead mb-auto">
+    {% load staticfiles %}
+    {% include "Home/includes/active_yakhisizwe.html" %}
+      </header>
+
+      <main role="main" class="inner cover">
+
+<center>
+        <img src="{% static 'Home/image/COASA.svg' %}" width="140" height="140" background="#777" color="#777" class="rounded-circle">
+</center>
+
+	<h3 class="cover-heading">Yakhisizwe initiative</h3> 
+	<p>Yakhisizwe Community Development Center has partnered with the Brain Trust to launch this initiative as a vehicle to give back to local communities through youth development.</p>
+	<h4>Vision</h4>
+	<p>Our vision is to see quality education become available to everyone in Afrika and the rest of the world.</p>
+	<h4>Your participation</h4>
+	<p>In order to have success in achieving our vision we need <strong>your</strong> help. Donate your time and join our voluteer programme and give back to <strong>your</strong> community.</p>
+
+
+            <p><a class="btn btn-primary btn-lg btn-block" href="../accounts/login" role="button">Join us.</a></p>
+
+{% include "Home/proverb/p24.html" %}
+
+{% endblock %}
