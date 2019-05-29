@@ -2,8 +2,7 @@
 {% block content %}
       <header class="masthead mb-auto">
     {% load staticfiles %}
-    {% include "Home/includes/active_bt.html" %}
-<br></br>
+
     {% include "Home/includes/active2_bt.html" %}
 
     {% include "Home/includes/active3_central.html" %}
@@ -12,9 +11,24 @@
       <main role="main" class="inner cover">
 
 <body>
-
-<iframe src="http://docs.google.com/gview?url=http://www.stlawu.edu/gallery/education/f/09textiles/adinkra_symbols.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
-
+<!--
+<p>Download the pdf of the green book <a href="{% static 'Home/pdfs/gaddafi-green-book.pdf'%}">here</a></p>
+<iframe src="http://docs.google.com/gview?url=http://openanthropology.org/libya/gaddafi-green-book.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
+-->
+<p><a href="../../../../../admin/" target= "ad1">Admin</a></p>
+<p>
+Welcome to the Brain Trust, New Age Liberty's think tank and economic vehicle. New Age Liberty was born on 08 April 2016 with <strong>the vision of creating a free, united and prosperous Afrika by 2063</strong>.
+</p>
+<p>
+Below are our organisational documents for all members to get acquainted with our organisation, our thinking, our culture and our goals.
+</p>
+<p><a href="{% static 'Home/pdfs/manifesto.pdf'%}" style="color:#FFFF00;">New Age Liberty founding manifesto</a></p>
+<p><a href="{% static 'Home/pdfs/agenda2063.pdf'%}" style="color:#FFFF00;">Agenda 2063: The Afrika We Want</a></p>
+<p><a href="{% static 'Home/pdfs/gaddafi-green-book.pdf'%}" style="color:#FFFF00;">The Green Book</a></p>
+<p><a href="{% static 'Home/pdfs/Cheikh Anta Diop - Precolonial Black Africa.pdf'%}" style="color:#FFFF00;">Precolonial Black Afrika - Anta Cheikh Diop</a></p>
+<p><a href="{% static 'Home/pdfs/adrinka_symbols.pdf'%}" style="color:#FFFF00;">Adrinka Symbols</a></p>
 </body>
+<br></br>
+    {% include "Home/proverb/p69.html" %}
 
 {% endblock %}

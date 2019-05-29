@@ -1,0 +1,25 @@
+{% extends "Home/header.html" %}
+{% block content %}
+      <header class="masthead mb-auto">
+    {% load staticfiles %}
+
+    {% include "Home/includes/active2_yakhisizwe.html" %}
+
+    {% include "Home/includes/active4_about.html" %}
+      </header>
+
+      <main role="main" class="inner cover">
+
+<center>
+        <img src="{% static 'Home/image/COASA.svg' %}" width="140" height="140" background="#777" color="#777" class="rounded-circle">
+</center>
+
+    {% include "Yakisizwe/includes/about_us.html" %}
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HZE6cg5IN9o?start=442" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DtfUtZfuuSQ?start=587" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% include "Home/proverb/p74.html" %}
+
+{% endblock %}

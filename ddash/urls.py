@@ -9,4 +9,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('init/', views.index2, name='index2'),
+    path('con/', views.index3, name='index3'),
     ]

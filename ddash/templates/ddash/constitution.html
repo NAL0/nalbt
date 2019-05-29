@@ -1,0 +1,23 @@
+{% extends "Home/header.html" %}
+{% block content %}
+      <header class="masthead mb-auto">
+    {% load staticfiles %}
+
+    {% include "Home/includes/active2_bt.html" %}
+
+    {% include "Home/includes/active3_constitution.html" %}
+      </header>
+
+      <main role="main" class="inner cover">
+
+<body>
+<!--
+<p>Download the pdf of the green book <a href="{% static 'Home/pdfs/gaddafi-green-book.pdf'%}">here</a></p>
+<iframe src="http://docs.google.com/gview?url=http://openanthropology.org/libya/gaddafi-green-book.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
+-->
+
+{% include "Home/constitutive_act.html" %}
+
+</body>
+
+{% endblock %}
