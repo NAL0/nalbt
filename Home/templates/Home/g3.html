@@ -1,0 +1,35 @@
+{% extends "Home/header.html" %}
+{% block content %}
+      <header class="masthead mb-auto">
+    {% load staticfiles %}
+    {% include "Home/includes/active_sgds.html" %}
+      </header>
+
+      <main role="main" class="inner cover">
+
+<br></br>
+
+<p>"Let food be thy medicine and medicine be thy food."</p>
+<div align=right>~ Hippocrates</div>
+<br></br>
+
+<p>
+Health is a choice. The truth is what we eat can be good for us or harmful to us. If we want to be healthy we must indeed eat the right things. Dr. Sebi is well known herbalist, natural healer, and intracellular therapist who has studied the human diet and created a guide to healthy eating.
+</p>
+
+<p>
+His methodology involves the use of natural alkaline plant foods and herbs to control acid levels in the body. This way, consumers’ bodies are protected against harmful mucus building up, which will lead to the development of diseases. He guide us to eat a plant-based diet that creates an alkaline environment in your body. An alkaline environment in your body that makes it tough for disease to live in.
+</p>
+
+<p>
+We all know that fruits and vegetables are healthy and cooking your food is healtier than eating out as you have control over what your eating and how it's prepared. Below is Dr. Sebi's guide. Including these into your diet will make your diet a lot healtier.
+</p>
+
+
+<img src="{% static 'Home/image/Sebi-nutritional-guide.jpg' %}" width="110%">
+
+
+<br></br>
+{% include "Home/proverb/p213.html" %}
+
+{% endblock %}

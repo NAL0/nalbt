@@ -1,0 +1,28 @@
+{% extends "Home/header.html" %}
+{% block content %}
+      <header class="masthead mb-auto">
+    {% load staticfiles %}
+    {% include "Home/includes/active_sgds.html" %}
+      </header>
+
+      <main role="main" class="inner cover">
+
+<br></br>
+
+<p>
+The Brain Trust is proud to introduce you to it's online school called BTInstitute. BTInstitute is dedicated to make education available to every child. Our curriculum is concerntrated on creating the world's next generation of social entrepreneurs and world leaders, which will be vital in achieving the global SDGs.
+</p>
+
+<p>
+We believe that Afrika's economic future can be found in agriculture and tourism, thus we are putting together learning courses in organic agriculture to serve as a basic of our curriculum. This base will prepare us to tackle the second SDG of "zero hunger". We are also working with the Yakhisizwe Community Development Center on the Yakhisizwe(Build a nation) Initiative, a curriculum in Philisophy, Economics and Technology to prepare our youth to lead the 4th industrial revolution.
+</p>
+
+<p>
+Afrika is on the rise with economic development. Education is the key to creating <strong>The Afrika We Want</strong>. If you are young and want success in the future reading is important. The first book we reccommend for youth(especially young women) is <a href="{% static 'Home/pdfs/gaddafi-green-book.pdf' %}" style="color:Tomato;">The Green Book</a>. Click <a href="https://youtu.be/p_eyqjNgg1E" style="color:Tomato;" target="blank3">here for audiobook</a>
+<p>
+
+<br></br>
+
+{% include "Home/proverb/p18.html" %}
+
+{% endblock %}

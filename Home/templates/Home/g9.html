@@ -1,0 +1,22 @@
+{% extends "Home/header.html" %}
+{% block content %}
+      <header class="masthead mb-auto">
+    {% load staticfiles %}
+    {% include "Home/includes/active_sgds.html" %}
+      </header>
+
+      <main role="main" class="inner cover">
+
+<br></br>
+
+
+<p>
+In conjunction with <a href="../07" target="blank2" style="color:Tomato;">goal 7</a> the Leseli plans to build up a smart grid connecting all the major city centers such that individuals and small co-operatives can harness solar, wind, hydro and geothermal energy to supply clean, sustainable, renewable energy for the industrialisation of our great continent (with a particular focus on organic agriculture and tourism).
+</p>
+<img src="{% static 'Home/image/plan.gif' %}" width=70%>
+
+
+<br></br>
+{% include "Home/proverb/p96.html" %}
+
+{% endblock %}

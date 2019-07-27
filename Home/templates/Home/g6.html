@@ -1,0 +1,18 @@
+{% extends "Home/header.html" %}
+{% block content %}
+      <header class="masthead mb-auto">
+    {% load staticfiles %}
+    {% include "Home/includes/active_sgds.html" %}
+      </header>
+
+      <main role="main" class="inner cover">
+
+<br></br>
+
+<img src="{% static 'Home/image/s1.jpg' %}" style="width:100%">
+<img src="{% static 'Home/image/s2.jpg' %}" style="width:100%">
+<img src="{% static 'Home/image/s3.jpg' %}" style="width:100%">
+
+{% include "Home/proverb/p105.html" %}
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "Home/header.html" %}
+{% block content %}
+      <header class="masthead mb-auto">
+    {% load staticfiles %}
+    {% include "Home/includes/active_sgds.html" %}
+      </header>
+
+      <main role="main" class="inner cover">
+
+<br></br>
+
+<img src="{% static 'Home/image/Sebi-nutritional-guide.jpg' %}" width=110%>
+
+<br></br>
+
+<p>
+Biocides (like pesticides and herbicides) as well as fertiisers have come to be seen as the way to boost crop yields but this it comes at the cost of poisining our water and land, not to mention the degredation of our much needed agricultural land. These practices are indeed unsustainable, we will eventually poison all our water and degrade all our agricultural land. We have pushed aside our traditional organic agricultural practices for unsustainable western practices but with the advent of mechanisation of agriculture we can increase the productivity of our traditional organic agriculture to feed our continent and the world without poisoning our water or degrading our precious agricutural land. We are committed to the mechanisation of our traditional organic agriculture focusing on the production of fruits, vegetable, nuts and seeds listed above, while preserving indigeonous species.
+</p>
+
+<br></br>
+
+{% include "Home/proverb/p21.html" %}
+
+{% endblock %}

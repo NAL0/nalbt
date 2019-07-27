@@ -1,0 +1,36 @@
+{% extends "Home/header.html" %}
+{% block content %}
+      <header class="masthead mb-auto">
+    {% load staticfiles %}
+    {% include "Home/includes/active_sgds.html" %}
+      </header>
+
+      <main role="main" class="inner cover">
+
+<br></br>
+
+<p>
+Listed below is all our collaborating partners that we work with to achieve the SDGs and create the <strong>Afrika We Want</strong>.
+</p>
+
+    <div class="row">
+
+
+      <div class="col-lg-4">
+        <img src="{% static 'Home/image/gl.png' %}" width="140" height="140" background="#777" color="#777" class="rounded-circle">
+        <p>New Age Liberty</p>
+      </div>
+
+      <div class="col-lg-4">
+        <img src="{% static 'Home/image/COASA.svg' %}" width="140" height="140" background="#777" color="#777" class="rounded-circle">
+        <p>Yakhisizwe Community Development Center</p>
+      </div>
+
+
+    </div>
+
+<br></br>
+
+{% include "Home/proverb/p32.html" %}
+
+{% endblock %}

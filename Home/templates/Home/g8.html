@@ -1,0 +1,23 @@
+{% extends "Home/header.html" %}
+{% block content %}
+      <header class="masthead mb-auto">
+    {% load staticfiles %}
+    {% include "Home/includes/active_sgds.html" %}
+      </header>
+
+      <main role="main" class="inner cover">
+
+<br></br>
+
+<p>
+New Age Liberty in it's <a href="Home/pdfs/manifesto.pdf" style="color:Tomato;">founding manifesto</a> committed to the irradication of unemployment on our continent. Together with them we commit to the reduction of unemployment to ~3% on the continent by 2030 by creating jobs in the industries listed in the Central Axiom of Freedom.
+</p>
+
+<br></br>
+
+{% include "Home/includes/CAF.html" %}
+
+<br></br>
+{% include "Home/proverb/p86.html" %}
+
+{% endblock %}
