@@ -9,5 +9,7 @@ from django.urls import path
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('vision/', views.index3, name='index3'),
     path('init/', views.index2, name='index2'),
+    
     ]

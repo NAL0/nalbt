@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'Yakisizwe',
     'authentication',
     'ddash',
+    'IdeaWall',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

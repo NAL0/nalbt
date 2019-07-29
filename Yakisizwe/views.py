@@ -7,3 +7,6 @@ def index(request):
 
 def index2(request):
     return render(request, 'Yakisizwe/dash.html')
+
+def index3(request):
+    return render(request, 'Yakisizwe/Education.html')

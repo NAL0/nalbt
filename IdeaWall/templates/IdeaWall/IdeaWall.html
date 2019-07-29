@@ -1,0 +1,16 @@
+{% extends "Home/header.html" %}
+{% block content %}
+      <header class="masthead mb-auto">
+    {% include "Home/includes/active2_bt.html" %}
+
+    {% include "Home/includes/active3_IdeaWall.html" %}
+      </header>
+
+      <main role="main" class="inner cover">
+
+	{% for post in object_list %}
+		<h5>{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.id}}">  {{ post.title }}</a></h5>
+	{% endfor %}
+	<br>
+	{% include "Home/proverb/p41.html" %}
+{% endblock %}
